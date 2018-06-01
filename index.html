@@ -204,7 +204,8 @@ We also design album from collections of photos and print them as per your choic
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" id="contactForm" https://formspree.io/print@inkfly.in"
+                    method="POST"> novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Name</label>
@@ -233,6 +234,7 @@ We also design album from collections of photos and print them as per your choic
                                 <p class="help-block text-danger"></p>
                                 <input type="hidden" name="_subject" value="E-Mail from your contact form" />
                                 <input type="hidden" name="_format" value="plain" />
+                                <input type="hidden" name="_next" value="/#contact" />
                             </div>
                         </div>
                         <br>
@@ -282,7 +284,7 @@ We also design album from collections of photos and print them as per your choic
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <!-- <script src="js/contact_me.js"></script> -->
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
